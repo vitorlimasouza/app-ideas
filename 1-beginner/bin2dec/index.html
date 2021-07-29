@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>bin2dec</title>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Bin2Dec</h1>
+        </header>
+
+        <div class="painel">
+            <div class="binario">
+                <p>Binario</p>
+                <input  id="bin" name="bin" type="text"
+                    onkeypress = "return onlyBin(event)" oninput="binToDec()">
+            </div>
+            <div class="decimal">
+                <p>Decimal</p>
+                <input  id="dec" name="dec" type="text" 
+                    onkeypress = "return onlyDec(event)" oninput="decToBin()">
+            </div>
+        </div>
+    </body>
+</html>
