@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Border-Radius Previewer</title>
+    </head>
+    <body>
+        <header>
+            <h1>Border-Radius Previewer</h1>
+        </header>
+        <div class="contents">
+            <div class="settings">
+                <div class="settings-border-radius">
+                    <div>
+                        Borda suberior esquerda
+                        <input type="text" id="border-top-left"
+                        oninput="borderRadius(id, value)">
+                    </div>
+                    <div>
+                        Borda suverior direita
+                        <input type="text" id="border-top-right"
+                        oninput="borderRadius(id, value)">
+                    </div>
+                    <div>
+                        Borda inferior esquerda
+                        <input type="text" id="border-bottom-left"
+                        oninput="borderRadius(id, value)">
+                    </div>
+                    <div>
+                        Borda inferior direita
+                        <input type="text" id="border-bottom-right"
+                        oninput="borderRadius(id, value)">
+                    </div>
+                </div>
+                <div class="more-settings">
+                    <div>
+                        Borda iguais
+                        <input type="checkbox" name="" id="link-borders">
+                    </div>     
+                </div>
+                <div>
+                    <button onclick="copySetting()">Copiar</button>
+                </div>
+            </div>
+            <div class="viewer">
+                <div id="object" style="height: 250px; width: 250px;">
+                    <textarea name="" id="infoCSS" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
