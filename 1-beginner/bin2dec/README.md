@@ -19,5 +19,5 @@ This challenge requires that the developer implementing it follow these constrai
 
 ## Bonus features
 
--[x]User can enter a variable number of binary digits
+-[x] User can enter a variable number of binary digits
 
