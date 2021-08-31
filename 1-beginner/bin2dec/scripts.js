@@ -1,19 +1,14 @@
 function onlyBin(e) {
+    var warning = document.getElementById('warning');
+
     var charCode = e.charCode ? e.charCode : e.keyCode;
+
     if (charCode != 8 && charCode != 9) {
         if (charCode == 48 || charCode == 49) {
+            warning.hidden = true;
             return true;
         }else{
-            return false;
-        }
-    }
-}
-
-function onlyDec(e){
-    var charCode = e.charCode ? e.charCode : e.keyCode;
-
-    if (charCode != 8 && charCode != 9) {
-        if (charCode < 48 || charCode > 57) {
+            warning.hidden = false;
             return false;
         }
     }
@@ -27,17 +22,9 @@ function binToDec(){
         const element = parseInt(bin[index]);
         dec += element * Math.pow(2, bin.length - 1 - index);
     }
-    document.getElementById('dec').value = dec
-}
-
-function decToBin(){
-    var dec = document.getElementById('dec').value
-    dec = parseInt(dec)
-    let bin = []
-    while (dec > 0) {
-        bin.push(dec%2)
-        dec = Math.floor(dec/2)
+    if(bin == ''){
+        document.getElementById('dec').value = '';
+    }else{
+        document.getElementById('dec').value = dec;
     }
-    bin = bin.reverse().join("")
-    document.getElementById('bin').value = bin
 }

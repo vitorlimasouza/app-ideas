@@ -15,13 +15,14 @@
         <div class="painel">
             <div class="binario">
                 <p>Binario</p>
+                <span hidden ="true" id="warning">Insira apenas 1 ou 0</span>
                 <input  id="bin" name="bin" type="text"
                     onkeypress = "return onlyBin(event)" oninput="binToDec()">
             </div>
             <div class="decimal">
                 <p>Decimal</p>
                 <input  id="dec" name="dec" type="text" 
-                    onkeypress = "return onlyDec(event)" oninput="decToBin()">
+                    onkeypress = "return false">
             </div>
         </div>
     </body>

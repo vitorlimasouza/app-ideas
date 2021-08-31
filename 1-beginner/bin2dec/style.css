@@ -36,6 +36,11 @@ p{
     font-size: 30px;
 }
 
+span{
+    font-size: 15px;
+    color: #f00;
+}
+
 /* classes */
 
 .painel{
