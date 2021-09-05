@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <header><h1>Calculator</h1></header>
+        <main>
+            <div class="calculator">
+                <div class="painel">
+                    <span id="painelText"></span>
+                </div>
+                <input type="text" name="" id="display" onkeypress="return false">
+                <div class="buttons">
+                    <input type="button" value="AC" class="button operator extended" onclick="commands[value]()">
+                    <input type="button" value="C" class="button operator" onclick="commands[value]()">
+                    <input type="button" value="/" class="button operator" onclick="getOperator(value)">
+                    <input type="button" value="7" class="button number" onclick="digit(value)">
+                    <input type="button" value="8" class="button number" onclick="digit(value)">
+                    <input type="button" value="9" class="button number" onclick="digit(value)">
+                    <input type="button" value="*" class="button operator" onclick="getOperator(value)">
+                    <input type="button" value="4" class="button number" onclick="digit(value)">
+                    <input type="button" value="5" class="button number" onclick="digit(value)">
+                    <input type="button" value="6" class="button number" onclick="digit(value)">
+                    <input type="button" value="-" class="button operator" onclick="getOperator(value)">
+                    <input type="button" value="1" class="button number" onclick="digit(value)">
+                    <input type="button" value="2" class="button number" onclick="digit(value)">
+                    <input type="button" value="3" class="button number" onclick="digit(value)">
+                    <input type="button" value="+" class="button operator" onclick="getOperator(value)">
+                    <input type="button" value="0" class="button number extended" onclick="digit(value)">
+                    <input type="button" value="." class="button number" onclick="digit(value)">
+                    <input type="button" value="=" class="button operator-result" onclick="showResult()">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
