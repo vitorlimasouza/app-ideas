@@ -28,6 +28,19 @@ textarea{
     height: 150px;
     border: 0;
 }
+
+button{
+    border: 0;
+    background-color: #888;
+    padding: 10px;
+    color: #000;
+    border-radius: 15px;
+}
+
+
+textarea {
+    resize: none;
+}
 /* --------------------- */
 
 .contents{
