@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #004;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h1{
+    margin: auto;
+}
+
+main{
+    display: grid;
+}
+
+input{
+    border: 1px solid black;
+    font-size: 30px;
+}
+
+
+.settings{
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.off{
+    width: 70px;
+    height: 60px;
+    border-radius: 100px 0px 0px 100px;;
+}
+
+.on{
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 100px 100px 0px;
+}
+
+.lights{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+}
+
+
+.red {
+    background-color: #c0392b;
+    animation: 1s infinite;
+    animation-name: animation-red;
+}
+
+@keyframes animation-red {
+    0%,
+    100% {
+        box-shadow: 0 0 25px 10px #c0392b;
+    }
+
+    50% {
+        box-shadow: 0 0 25px 1px #c0392b;
+    }
+}
+
+.blue {
+    background-color: #2d2bc0;
+    animation: 1s infinite;
+    animation-name: animation-blue;
+}
+
+@keyframes animation-blue {
+    0%,
+    100% {
+        box-shadow: 0 0 25px 1px #2d2bc0;
+    }
+
+    50% {
+        box-shadow: 0 0 25px 10px #2d2bc0;
+    }
+}
+
+.green {
+    background-color: #2bc032;
+    animation: 1s infinite;
+    animation-name: animation-green;
+}
+
+@keyframes animation-green {
+    0%,
+    100% {
+        box-shadow: 0 0 25px 10px #2bc032;
+    }
+
+    50% {
+        box-shadow: 0 0 25px 1px #2bc032;
+    }
+}
